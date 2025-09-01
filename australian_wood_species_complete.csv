@@ -1,0 +1,44 @@
+id,name,scientific,availability,applications,price,origin,category
+1A,Blackbean,Castanospermum australe,Usually in stock,"['Furniture', 'Turnery', 'Flooring']",B,Australian,australian
+2A,Silver Ash,Flindersia spp.,Usually in stock,"['Furniture', 'Musical Instruments', 'Turnery', 'Boat Building', 'Flooring']",B,Australian,australian
+3A,Myrtle,Nothofagus cunninghamii,Usually in stock,"['Furniture', 'Turnery']",B,Australian,australian
+4A,Rose Alder,Caldcluvia australiensis,Usually in stock,"['Furniture', 'Turnery']",A,Australian,australian
+5A,Tallowwood,Eucalyptus microcorys,Usually in stock,"['Furniture', 'Flooring']",A,Australian,australian
+6A,Mulga,Acacia aneura,Usually in stock,"['Furniture', 'Musical Instruments', 'Turnery']",B,Australian,australian
+7A,Camphor Laurel,Cinnamomum camphorum,Usually in stock,"['Furniture', 'Turnery', 'Carvery']",C,Australian,australian
+8A,Tasmanian Oak,Eucalyptus obliqua. regnans,Usually in stock,"['Furniture', 'Flooring']",B,Australian,australian
+9A,Cypress Pine,Callitris glacua,Usually in stock,"['Furniture', 'Turnery', 'Flooring']",A,Australian,australian
+10A,Tasmanian Blackwood,Acacia melanoxylon,Usually in stock,"['Furniture', 'Musical Instruments', 'Turnery', 'Flooring']",B,Australian,australian
+11A,Huon Pine,Dacrydium franklinii,Usually in stock,"['Furniture', 'Turnery', 'Carvery', 'Boat Building']",C,Australian,australian
+12A,Celery Top Pine,Phyllocladus asplenifolius,Available on request,"['Furniture', 'Turnery', 'Boat Building', 'Flooring']",C,Australian,australian
+14A,W.A. She Oak,Casuarina fraserana,Usually in stock,"['Furniture', 'Turnery']",C,Australian,australian
+15A,Australian Cedar,Cedrela toona toonaaustralis,Usually in stock,"['Furniture', 'Turnery', 'Carvery', 'Boat Building']",D,Australian,australian
+16A,Qld Maple,Flindersia brayleyana,Usually in stock,"['Furniture', 'Musical Instruments', 'Turnery', 'Carvery', 'Boat Building']",B,Australian,australian
+17A,Qld Silky Oak,Cardwellia sublimis,Usually in stock,"['Furniture', 'Turnery', 'Flooring']",D,Australian,australian
+18A,Qld Walnut,Endiandra palmerstonii,Usually in stock,"['Furniture', 'Turnery', 'Carvery', 'Flooring']",C,Australian,australian
+19A,Satin Sycamore,Ceratopetalum succirubium,Usually in stock,"['Furniture', 'Turnery', 'Flooring']",B,Australian,australian
+20A,Jarrah,Eucalyptus marginata,Usually in stock,"['Furniture', 'Turnery', 'Flooring']",B,Australian,australian
+21A,N.S.W. Scented Rosewood,Dysoxylum fraseranum,Usually in stock,"['Furniture', 'Turnery', 'Carvery']",D,Australian,australian
+22A,Qld Black Wattle,Acacia auriculiformis/mangium,Usually in stock,"['Furniture', 'Turnery']",B,Australian,australian
+23A,Yellow Walnut,Beilschmiedia bancroftii,Usually in stock,"['Furniture', 'Turnery', 'Flooring']",B,Australian,australian
+24A,Pepperwood (Brown Beech),Cinnamomum laubatii,Available on request,"['Furniture', 'Turnery', 'Carvery']",B,Australian,australian
+25A,White Cheesewood,Wrightia laeuis (mullgar),Usually in stock,"['Turnery', 'Carvery']",B,Australian,australian
+26A,Blackbutt,Eucalyptus Pilularis,Usually in stock,"['Furniture', 'Turnery', 'Carvery', 'Boat Building']",C,Australian,australian
+27A,Karri,Eucalyptus diversicolor,Available on request,"['Furniture', 'Flooring']",A,Australian,australian
+28A,Coachwood,Ceratopetalum apelatum,Usually in stock,"['Furniture', 'Turnery', 'Carvery']",C,Australian,australian
+29A,King William Pine,Athrotaxis selaginoides,Available on request,"['Furniture', 'Boat Building']",D,Australian,australian
+30A,Hoop Pine,Araucaria cunninghamii,Usually in stock,"['Furniture', 'Turnery', 'Boat Building']",A,Australian,australian
+33A,Red Iron bark,Eucalvptus sideroxylon,Available on request,"['Furniture', 'Flooring']",A,Australian,australian
+34A,Sydney Blue Gum,Eucalyptus saligna,Usually in stock,"['Furniture', 'Turnery', 'Flooring']",A,Australian,australian
+35A,Brush Box,Tristania conferta,Usually in stock,"['Furniture', 'Flooring']",A,Australian,australian
+36A,River Red Gum,Eucalyptus camadulensis,Usually in stock,"['Furniture', 'Turnery', 'Flooring']",B,Australian,australian
+37A,Victorian Ash,Eucalyptus regnans,Usually in stock,"['Furniture', 'Flooring']",B,Australian,australian
+38A,Red Tulip Oak,Argyrodendron peralatum,Available on request,"['Furniture', 'Flooring']",C,Australian,australian
+39A,Qld Kauri,Agathis microstachya,Available on request,"['Furniture', 'Turnery', 'Carvery', 'Boat Building', 'Flooring']",C,Australian,australian
+40A,Bolly Silkwood (Tarzali),Criptocarya oblata,Available on request,"['Furniture', 'Turnery', 'Flooring']",B,Australian,australian
+41A,Qld Leichhardt,Neonauclea gordoniana,Usually in stock,"['Turnery', 'Carvery', 'Flooring']",C,Australian,australian
+42A,Qld Narrow Leaf Wattle,Acacia (spp) aulacoarpa,Usually in stock,"['Furniture', 'Turnery', 'Flooring']",C,Australian,australian
+43A,Flooded Gum,Eucalyptus grandis,Usually in stock,['Flooring'],B,Australian,australian
+46A,Bunya Pine,Araucaria bidwillii,Usually in stock,['Furniture'],B,Australian,australian
+47A,Northern Brush Mahogany,Geissois biagiana,Usually in stock,['Furniture'],C,Australian,australian
+48A,Spotted Gum,Eucalyptus maculata,Usually in stock,"['Furniture', 'Boat Building', 'Flooring']",B,Australian,australian

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trend Timbers - Wood Species Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Trend Timbers</h1>
+            <p class="header__subtitle">Wood Species Catalog</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Search and Stats Section -->
+            <section class="search-section">
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" class="form-control search-input" placeholder="Search species, scientific name, or origin...">
+                        <button id="clearSearch" class="btn-clear-search hidden" aria-label="Clear search">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="stats-and-controls">
+                    <div class="results-stats">
+                        <span id="resultsCount">0</span> of <span id="totalCount">0</span> species
+                    </div>
+                    
+                    <div class="controls">
+                        <button id="filterToggle" class="btn btn--secondary filter-toggle">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46"></polygon>
+                            </svg>
+                            Filters
+                        </button>
+                        
+                        <div class="sort-controls">
+                            <select id="sortSelect" class="form-control sort-select">
+                                <option value="name">Sort by Name</option>
+                                <option value="price">Sort by Price</option>
+                                <option value="availability">Sort by Availability</option>
+                                <option value="category">Sort by Category</option>
+                            </select>
+                            <div class="sort-direction">
+                                <button id="sortAsc" class="btn-sort-direction active" data-direction="asc" aria-label="Sort ascending" title="Sort ascending">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="18 15 12 9 6 15"></polyline>
+                                    </svg>
+                                </button>
+                                <button id="sortDesc" class="btn-sort-direction" data-direction="desc" aria-label="Sort descending" title="Sort descending">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Filter Sidebar -->
+            <aside id="filterSidebar" class="filter-sidebar hidden">
+                <div class="filter-header">
+                    <h3>Filters</h3>
+                    <button id="closeSidebar" class="btn-close" aria-label="Close filters">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="filter-content">
+                    <button id="clearAllFilters" class="btn btn--outline btn--sm clear-filters-btn">Clear All Filters</button>
+                    
+                    <!-- Active Filters -->
+                    <div id="activeFilters" class="active-filters hidden">
+                        <div class="active-filters__header">Active Filters:</div>
+                        <div id="activeFiltersList" class="active-filters__list"></div>
+                    </div>
+
+                    <!-- Filter Groups -->
+                    <div class="filter-group">
+                        <label class="filter-label">Category</label>
+                        <div class="filter-options" id="categoryFilters"></div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label">Availability</label>
+                        <div class="filter-options" id="availabilityFilters"></div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label">Applications</label>
+                        <div class="filter-options" id="applicationFilters"></div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label">Price Range</label>
+                        <div class="filter-options" id="priceFilters"></div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label">Origin</label>
+                        <div class="filter-options" id="originFilters"></div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Species Grid -->
+            <section class="species-section">
+                <div id="speciesGrid" class="species-grid">
+                    <!-- Species cards will be dynamically generated here -->
+                </div>
+                
+                <div id="noResults" class="no-results hidden">
+                    <div class="no-results__icon">🔍</div>
+                    <h3>No species found</h3>
+                    <p>Try adjusting your search or filters to find what you're looking for.</p>
+                    <button id="clearFiltersFromNoResults" class="btn btn--primary">Clear All Filters</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Species Detail Modal -->
+    <div id="speciesModal" class="modal hidden">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 id="modalTitle"></h2>
+                <button id="closeModal" class="btn-close" aria-label="Close details">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body" id="modalBody">
+                <!-- Modal content will be dynamically generated -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
